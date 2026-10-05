@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
+    <meta
+      name="description"
+      content="实习生招聘数据复盘：纯前端本地分析工具，数据默认不出浏览器，不使用 CDN、埋点或第三方字体。"
+    />
+    <title>实习生招聘数据复盘</title>
+    <!--
+      生产 CSP **不在这里**：它由构建时的 Vite 插件按模式注入（本地版 connect-src 'none' /
+      含 AI 版精确放行 https://api.deepseek.com）。策略字符串的唯一来源是 src/lib/csp.ts，
+      产物同时带 meta（弱）与 dist/_headers（响应头，强，Cloudflare Pages / Netlify 使用）。
+      GitHub Pages 只能靠 meta，差异写在 deploy/ 的三份说明里（PRD 18.6）。
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

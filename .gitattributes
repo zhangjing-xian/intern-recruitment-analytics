@@ -1,0 +1,8 @@
+# 换行与二进制处理（避免跨机器克隆后 .bat 变成 LF 而无法双击运行）
+* text=auto
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.woff2 binary
